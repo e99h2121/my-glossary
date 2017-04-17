@@ -1,0 +1,4 @@
+DELETE FROM GLOSSARY
+
+INSERT INTO GLOSSARY select * from csvread('C:\glossary-db-data\glossary\glossary_.csv', null, 'UTF-8');
+

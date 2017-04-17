@@ -1,0 +1,5 @@
+CALL CSVWRITE('C:\glossary-db-bkup\bkup-glossary-20170417.csv', 'SELECT * FROM GLOSSARY ORDER BY JA, EN, PRODUCT', 'UTF-8');
+
+CALL CSVWRITE('C:\glossary-db-bkup\bkup-glossary_zh-20170317.csv', 'SELECT * FROM GLOSSARY_ZH ORDER BY JA, ZH, PRODUCT', 'UTF-8');
+
+CALL CSVWRITE('C:\glossary-db-bkup\bkup-glossary_index-20170417.csv', 'SELECT * FROM GLOSSARY_INDEX ORDER BY PRODUCT', 'UTF-8');

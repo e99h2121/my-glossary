@@ -1,0 +1,4 @@
+DELETE FROM GLOSSARY_ZH
+
+INSERT INTO GLOSSARY_ZH select * from csvread('C:\glossary-db-data\glossary_zh\glossary_ZH.csv', null, 'UTF-8');
+
